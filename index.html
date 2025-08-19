@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Desafío 2 - Integración JS</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al CSS -->
+</head>
+<body>
+    <div class="container"> <!-- Agrega el contenedor -->
+        <h1>Desafío 2 - Funciones JavaScript</h1>
+        <button onclick="mostrarHola()">Mostrar ¡Hola, mundo!</button>
+        <br><br>
+        <input type="text" id="nombreInput" placeholder="Ingresa tu nombre">
+        <button onclick="mostrarHolaNombre(document.getElementById('nombreInput').value)">Hola</button>
+        <div id="saludoNombre" class="resultado"></div>
+        <br><br>
+        <input type="number" id="dobleInput" placeholder="Número para doble">
+        <button onclick="alert('Doble: ' + calcularDoble(Number(document.getElementById('dobleInput').value)))">Calcular Doble</button>
+        <br><br>
+        <input type="number" id="promA" placeholder="A">
+        <input type="number" id="promB" placeholder="B">
+        <input type="number" id="promC" placeholder="C">
+        <button onclick="alert('Promedio: ' + calcularPromedio(Number(document.getElementById('promA').value), Number(document.getElementById('promB').value), Number(document.getElementById('promC').value)))">Calcular Promedio</button>
+        <br><br>
+        <input type="number" id="mayorA" placeholder="A">
+        <input type="number" id="mayorB" placeholder="B">
+        <button onclick="alert('Mayor: ' + encontrarMayor(Number(document.getElementById('mayorA').value), Number(document.getElementById('mayorB').value)))">Encontrar Mayor</button>
+        <br><br>
+        <input type="number" id="cuadradoInput" placeholder="Número para cuadrado">
+        <button onclick="alert('Cuadrado: ' + cuadrado(Number(document.getElementById('cuadradoInput').value)))">Calcular Cuadrado</button>
+        <br><br>
+    </div>
+    <script src="desafio-2.js"></script>
+</body>
+</html>
